@@ -1,0 +1,41 @@
+/* Global Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Tailwind classes handle primary background/color, but we ensure the font */
+}
+
+/* Specific styling for the flag placeholder */
+.saf-flag {
+    background-image: url('https://placehold.co/40x24/005663/FFFFFF?text=SA');
+}
+
+/* Transitions for better UX */
+.language-selector,
+.theme-toggle,
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Rotation for dark theme icon */
+.theme-toggle.dark {
+    transform: rotate(180deg);
+}
+
+/* SOS button pulse animation */
+.sos-button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
